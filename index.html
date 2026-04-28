@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | JForbiz International</title>
+
+  <link rel="stylesheet" href="./styles.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+</head>
+<body>
+
+<header class="site-header fade-in-on-scroll">
+  <div class="brand">
+    <div class="brand-text">
+      <div class="brand-name">JForbiz</div>
+      <div class="brand-subtitle">International</div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="hero fade-in-on-scroll">
+  <img class="hero-img" src="./assets/hero-industrial.jpg" />
+</section>
+
+<section class="section fade-in-on-scroll">
+  <h2 class="section-title">Locations</h2>
+</section>
+
+<section class="map-wrap fade-in-on-scroll">
+  <div class="map-stage">
+    <div id="map"></div>
+  </div>
+</section>
+
+<section class="section fade-in-on-scroll">
+  <h2 class="section-title">Contact Us</h2>
+
+  <form class="contact-form">
+    <input class="input" type="text" placeholder="Name" />
+    <input class="input" type="email" placeholder="Email" />
+    <textarea class="textarea" placeholder="Add a message"></textarea>
+    <button class="btn" disabled>Submit</button>
+  </form>
+</section>
+
+</main>
+
+<footer class="site-footer fade-in-on-scroll">
+  <div class="footer-inner">
+    Copyright © 2021 JForbiz International - All Rights Reserved.
+  </div>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="./map.js"></script>
+<script src="./scroll.js"></script>
+
+</body>
+</html>

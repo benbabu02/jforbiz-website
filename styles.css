@@ -91,9 +91,33 @@ body {
   margin: 0 auto;
   padding: 10px;
   border: none;
-  background: #cfcfcf;
+  background: var(--accent);
   color: white;
   font-weight: 700;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease, opacity 0.3s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+  background: #2288b5;
+}
+
+.btn:active {
+  transform: scale(0.97);
+  background: #1a6e96;
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.btn:disabled {
+  background: #cfcfcf;
+  cursor: not-allowed;
+  transform: none;
 }
 
 .site-footer {
@@ -112,4 +136,26 @@ body {
 .fade-in-on-scroll.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.form-success {
+  color: #2e7d32;
+  background: #f0faf0;
+  border: 1px solid #a5d6a7;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-top: 12px;
+  font-size: 0.95rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.form-error {
+  color: #c62828;
+  background: #fff5f5;
+  border: 1px solid #ef9a9a;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-top: 12px;
+  font-size: 0.95rem;
 }

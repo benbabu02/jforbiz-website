@@ -62,8 +62,11 @@
       try {
         const res = await fetch('https://formsubmit.co/el/mekalo', {
           method: 'POST',
-          headers: { 'Accept': 'application/json' },
-          body: new FormData(this)
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(Object.fromEntries(new FormData(this)))
         });
         if (res.ok) {
           this.reset();
